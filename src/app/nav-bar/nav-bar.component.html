@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+            <a class="navbar-brand" [routerLink]="['/home']">My Project Site</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a (click)="homeBtn()">Home <span class="sr-only">(current)</span></a></li>
+
+            </ul>
+            <form id="signin" class="navbar-form navbar-right" role="form">
+
+                <button class="btn btn-primary" (click)="loginBtn()">Login</button>
+                <button class="btn btn-primary" (click)="registerBtn()">Register</button>
+            </form>
+        </div>
+    </div>
+</nav>
